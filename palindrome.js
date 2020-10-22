@@ -5,6 +5,10 @@
 //   palindrome("Madam") === true
 //   palindrome("love") === false
 
+
+//Time complexity : 0(N)-- We go over every chracter in the string to reverse it
+
+
 const palindrome = str=> {
   str=str.toLowerCase()
   let reverseStr='';
