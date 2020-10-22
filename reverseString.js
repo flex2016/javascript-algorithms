@@ -8,6 +8,7 @@
 //Space complexity : 0(N)
 
 const revstr = str =>{
+  //check input
    if(!str || typeof str != 'string' || str.length < 2 ) return str;
   let newstr='';
   for(let i=0; i<str.length; i++){
