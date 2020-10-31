@@ -26,7 +26,7 @@ function steps(n) {
     for( let hash = i; hash >0; hash--){
       step +="#";
     }
-    for(let space = n-i; space >0; space --){
+    for(let space = n-i; space >0; space--){
       step+=" ";
     }
 
