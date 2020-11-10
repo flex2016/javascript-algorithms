@@ -9,7 +9,6 @@ function findElement(arr, func) {
     if(func(arr[i])){
       console.log(arr[i])
       return arr[i]
-
     }
   }
   return undefined
