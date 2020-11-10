@@ -10,8 +10,18 @@
 // destroyer(["tree", "hamburger", 53], "tree", 53) should return ["hamburger"].
 // destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", "hotdog", "grandma", "bugati", "trojan") should return [12,92,65].
 
-function destroyer(arr) {
-  return arr;
-}
 
-destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+// Code Explanation
+// Declare a variable named args and set it equal to a new Array object from() the arguments passed into the function.
+// On the same or next line, use the slice() method on args starting from the second index,
+//  This separates the arguments used for filtering into their own array of args.
+// Return the filtered array, using includes() in the callback function to check if val is not in args;
+// returning true to keep the value in the original array or false to remove it.
+
+
+function destroyer(arr) {
+  var args = Array.from(arguments).slice(1);
+  return arr.filter(function(val) {
+    return !args.includes(val);
+  });
+}
