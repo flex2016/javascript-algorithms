@@ -43,6 +43,8 @@ diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 
 
+
+//This seems to work but doesnt pass last tests
 function diffArray(arr1, arr2) {
   var newArr = [];
   let map ={}
