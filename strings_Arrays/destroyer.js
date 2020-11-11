@@ -25,3 +25,11 @@ function destroyer(arr) {
     return !args.includes(val);
   });
 }
+
+
+
+// Code using ES6 syntax to declare function using arrow functions.
+// Using spread operator to retrieve the arguments.
+// Return the filtered array, using includes().
+
+const destroyer2 = (arr, ...valsToRemove) => arr.filter(elem => !valsToRemove.includes(elem));
