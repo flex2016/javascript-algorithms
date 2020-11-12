@@ -13,7 +13,7 @@
 
 
 function vowels(str) {
-  vowels="aeiou".split("")
+  let vowels="aeiou".split("")
   let count= 0;
   str= str.toLowerCase();
   for(let i=0; i< str.length; i++){
