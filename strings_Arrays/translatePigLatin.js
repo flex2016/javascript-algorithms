@@ -14,7 +14,7 @@
 
 
 function translatePigLatin(str) {
-var vowels= [‘a’,‘e’,‘i’,‘o’,‘u’], index=0;
+var vowels= "aeiou".split(""), index=0;
 
  if(vowels.indexOf(str[index])!== -1){  //initial edge case
      return str+"way";
@@ -24,7 +24,7 @@ var vowels= [‘a’,‘e’,‘i’,‘o’,‘u’], index=0;
          break;
     }
  }
-return str.slice(index,str.length)+str.slice(0, index)+“ay”;
+return str.slice(index,str.length)+str.slice(0, index)+ "ay";
 }
 
 function translatePigLatin(str) {
