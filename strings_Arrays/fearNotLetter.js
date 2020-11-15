@@ -31,3 +31,17 @@ fearNotLetter("abce");
 // It is checked if code of current character is the expected one (no characters are skipped) by using the logic - code of current character = code of first character + number of iterations.
 // If a character is missing, the missing character is found and the final string is returned.
 // undefined is returned if there is no missing character in the string.
+
+
+function fearNotLetter(str) {
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  var len = str.length;
+  var start = alphabet.indexOf(str[0]);
+
+  for(var i = start; i < start + len; i++){
+    if(!str.includes(alphabet[i])){
+      return alphabet[i];
+    }
+  }
+  return undefined;
+}
