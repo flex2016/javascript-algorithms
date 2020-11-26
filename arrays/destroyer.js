@@ -40,12 +40,12 @@ function destroyer(arr) {
   var res= [];
   for (var i = 1; i < arguments.length; i++) {
   console.log(arguments[i]);
-  for (var j = 0; j < arr.length; j++) {
-    if (arr[j] === arguments[i]) {
-      delete arr[j];
-      console.log(arr);
+    for (var j = 0; j < arr.length; j++) {
+      if (arr[j] === arguments[i]) {
+        delete arr[j];
+        console.log(arr);
+      }
     }
-  }
   }
     for (var i = 0; i < arr.length; i++) {
       console.log(arr[i]);
