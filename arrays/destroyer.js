@@ -33,3 +33,25 @@ function destroyer(arr) {
 // Return the filtered array, using includes().
 
 const destroyer2 = (arr, ...valsToRemove) => arr.filter(elem => !valsToRemove.includes(elem));
+
+function destroyer(arr) {
+  arr = arguments[0];
+  //console.log(arr)
+  var res= [];
+  for (var i = 1; i < arguments.length; i++) {
+  console.log(arguments[i]);
+  for (var j = 0; j < arr.length; j++) {
+    if (arr[j] === arguments[i]) {
+      delete arr[j];
+      console.log(arr);
+    }
+  }
+  }
+    for (var i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+      if (arr[i]) {
+        res.push(arr[i]);
+      }
+    }
+  return res;
+}
