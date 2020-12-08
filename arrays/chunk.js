@@ -41,7 +41,7 @@ function chunk(array, size) {
 function chunk1(arr, size){
   let newAr=[];
   for(i = 0; i<arr.length; i += size){
-    mychunk = arr.slice(i, i+size)
+    let mychunk = arr.slice(i, i+size)
     newAr.push(mychunk)
   }
   return newAr
