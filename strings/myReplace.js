@@ -43,4 +43,25 @@ function myReplace(str, before, after) {
   return str;
 }
 
+function myReplace(str, before, after) {
+  str= str.split(" ")
+  after= after.toLowerCase()
+  let newStr=[];
+  for(let i=0; i<str.length; i++){
+    if(str[i] === before){
+      if(before[0] === before[0].toUpperCase()){
+        after=after[0].toUpperCase() + after.slice(1)
+        newStr.push(after)
+      }
+      else{
+        newStr.push(after)
+      }
+    }
+    else{
+      newStr.push(str[i])
+    }
+  }
+  return newStr.join(" ");
+}
+
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
