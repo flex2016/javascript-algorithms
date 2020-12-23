@@ -28,7 +28,8 @@ fearNotLetter("abce");
 
 // This solutions makes use of a for loop.
 // Code of encountered character is stored in code.
-// It is checked if code of current character is the expected one (no characters are skipped) by using the logic - code of current character = code of first character + number of iterations.
+// It is checked if code of current character is the expected one (no characters are skipped)
+//by using the logic - code of current character = code of first character + number of iterations.
 // If a character is missing, the missing character is found and the final string is returned.
 // undefined is returned if there is no missing character in the string.
 
