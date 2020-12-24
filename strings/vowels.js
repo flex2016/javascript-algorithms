@@ -7,7 +7,7 @@
 //   vowels('aEiOu') --> 5
 //   vowels('I am a world-class developer using iterations') --> 16
 
-//time =O(n) All cahracters must be checked before complete
+//time =O(n) All characters must be checked before complete
 //space =O(1)
 
 
@@ -17,7 +17,7 @@ function vowels(str) {
   let count= 0;
   str= str.toLowerCase();
   for(let i=0; i< str.length; i++){
-    for(let j=0; j< str.length; j++){
+    for(let j=0; j< vowels.length; j++){
       if(vowels[j] === str[i]){
       count++
     }
